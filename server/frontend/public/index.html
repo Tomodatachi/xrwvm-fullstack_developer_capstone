@@ -1,43 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Dealership SignUp</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%;">
+    <div class="banner" name="about-header">
+      <h1>About Us</h1>
+      Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported
+      cars at reasonable prices. Our dedicated team of professionals is committed to helping you find the perfect vehicle
+      to suit your needs and budget.
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <div style="display: flex; flex-direction: row; margin: auto;">
+
+      <div class="card" style="width: 30%;">
+        <img class="card-img-top"
+          src="https://randomuser.me/api/portraits/men/32.jpg"
+          alt="James Carter">
+        <div class="card-body">
+          <p class="title">James Carter</p>
+          <p>General Manager</p>
+          <p class="card-text">James has over 15 years of experience in the automotive industry and leads our dealership
+            with a passion for customer satisfaction. He ensures every client drives away with confidence.</p>
+          <p>james.carter@bestcars.com</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 30%;">
+        <img class="card-img-top"
+          src="https://randomuser.me/api/portraits/women/44.jpg"
+          alt="Sofia Martinez">
+        <div class="card-body">
+          <p class="title">Sofia Martinez</p>
+          <p>Sales Director</p>
+          <p class="card-text">Sofia specializes in matching customers with their ideal vehicles from our diverse
+            inventory of domestic and imported cars. She brings 10 years of sales expertise and a warm, consultative
+            approach.</p>
+          <p>sofia.martinez@bestcars.com</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 30%;">
+        <img class="card-img-top"
+          src="https://randomuser.me/api/portraits/men/76.jpg"
+          alt="David Chen">
+        <div class="card-body">
+          <p class="title">David Chen</p>
+          <p>Head of Service & Maintenance</p>
+          <p class="card-text">David oversees our certified service center and ensures all vehicles meet the highest
+            quality standards before delivery. With 12 years of mechanical expertise, he keeps our customers safe on
+            the road.</p>
+          <p>david.chen@bestcars.com</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 </html>
+
