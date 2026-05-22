@@ -1,4 +1,4 @@
-#fullstack_developer_capstone
+# fullstack_developer_capstone
 
 ## Project Overview
 This repository contains the final capstone project for the IBM Full Stack Software Developer Professional Certificate. The goal of this project was to design, develop, and deploy a robust web application using the full stack technologies covered throughout the certification.
